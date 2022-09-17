@@ -1,7 +1,10 @@
 package com.flowers.middle.eustoma;
 
+import com.flowers.Color;
+import com.flowers.Name;
+
 public class Mariachi extends Eustoma {
-    public Mariachi(String name, String color, int price) {
-        super(name, color, price);
+    public Mariachi(Name name, Color color, int price, int height, String delivery_date) {
+        super(name, color, price, height, delivery_date);
     }
 }

@@ -1,9 +1,11 @@
 package com.flowers.small;
 
+import com.flowers.Color;
 import com.flowers.Flower;
+import com.flowers.Name;
 
 public class SmallFlower extends Flower {
-    public SmallFlower(String name, String color, int price) {
-        super(name, color, price);
+    public SmallFlower(Name name, Color color, int price, int height, String delivery_date) {
+        super(name, color, price, height, delivery_date);
     }
 }

@@ -1,9 +1,11 @@
 package com.flowers.big.hydrangea;
 
+import com.flowers.Color;
+import com.flowers.Name;
 import com.flowers.big.BigFlower;
 
 public class Hydrangea extends BigFlower {
-    public Hydrangea(String name, String color, int price) {
-        super(name, color, price);
+    public Hydrangea(Name name, Color color, int price, int height, String delivery_date) {
+        super(name, color, price, height, delivery_date);
     }
 }

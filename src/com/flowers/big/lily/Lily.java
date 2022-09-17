@@ -1,9 +1,11 @@
 package com.flowers.big.lily;
 
+import com.flowers.Color;
+import com.flowers.Name;
 import com.flowers.big.BigFlower;
 
 public class Lily extends BigFlower {
-    public Lily(String name, String color, int price) {
-        super(name, color, price);
+    public Lily(Name name, Color color, int price, int height, String delivery_date) {
+        super(name, color, price, height, delivery_date);
     }
 }

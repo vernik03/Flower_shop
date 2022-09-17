@@ -1,7 +1,10 @@
 package com.flowers.small.myosotis;
 
+import com.flowers.Color;
+import com.flowers.Name;
+
 public class Indigo extends Myosotis {
-    public Indigo(String name, String color, int price) {
-        super(name, color, price);
+    public Indigo(Name name, Color color, int price, int height, String delivery_date) {
+        super(name, color, price, height, delivery_date);
     }
 }
