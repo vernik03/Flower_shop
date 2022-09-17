@@ -64,7 +64,7 @@ public class Flower {
     }
 
     public void setDate(String delivery_date){
-        if ( LocalDate.parse(delivery_date).isAfter(LocalDate.now()) || LocalDate.parse(delivery_date).isEqual(LocalDate.now())) {
+        if (LocalDate.now().isAfter(LocalDate.parse(delivery_date)) || LocalDate.now().isEqual(LocalDate.parse(delivery_date))) {
             this.delivery_date = LocalDate.parse(delivery_date);
             if (!CheckFreshness()) {
                 throw new IllegalArgumentException("Flower is too old");

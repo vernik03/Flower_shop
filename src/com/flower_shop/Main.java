@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
         Florist florist = new Florist();
-        Flower[] flowers = new Flower[9];
+        Flower[] flowers = new Flower[3];
 //        flowers[0] = new Flower(Name.ROSE_AKITO, Color.RED, 100, 10, "2022-09-10");
 //        flowers[1] = new Flower(Name.ROSE_ALOHA, Color.YELLOW, 120, 13, "2022-09-12");
 //        flowers[2] = new Flower(Name.ROSE_AMSTERDAM, Color.ORANGE, 130, 8, "2022-09-15");
@@ -21,9 +21,9 @@ public class Main {
 //        flowers[6] = new Flower(Name.EUSTOMA_CORELLI, Color.RED, 50, 8, "2022-09-10");
 //        flowers[7] = new Flower(Name.EUSTOMA_ECHO, Color.YELLOW, 40, 5, "2022-09-12");
 //        flowers[8] = new Flower(Name.EUSTOMA_MARIACHI, Color.PINK, 30, 4, "2022-09-15");
-        flowers[0] = new Macrophylla(Color.WHITE, 100, "2022-09-10");
-        flowers[1] = new Macrophylla(Color.WHITE, 120, "2022-09-12");
-        flowers[2] = new Macrophylla(Color.WHITE, 130, "2022-09-15");
+        flowers[0] = new Macrophylla(Color.BLUE, 100, "2022-09-16");
+        flowers[1] = new Macrophylla(Color.PURPLE, 120, "2022-09-12");
+        flowers[2] = new Macrophylla(Color.PINK, 130, "2022-09-15");
 
 
         for (Flower flower : flowers) {
