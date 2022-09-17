@@ -39,7 +39,7 @@ public class Flower {
         return Period.between(delivery_date, LocalDate.now()).getDays();
     }
 
-    public void setHeight(Integer height){
+    protected void setHeight(Integer height){
         if (height >= 10 && height <= 150) {
             this.height = height;
         } else {
@@ -51,7 +51,7 @@ public class Flower {
         this.price = 0;
     }
 
-    public void setColor(Color color){
+    protected void setColor(Color color){
         if (true) {
             this.color = color;
         } else {
@@ -59,11 +59,11 @@ public class Flower {
         }
     }
 
-    public void setName (){
+    protected void setName (){
         this.name = null;
     }
 
-    public void setDate(String delivery_date){
+    protected void setDate(String delivery_date){
         if (LocalDate.now().isAfter(LocalDate.parse(delivery_date)) || LocalDate.now().isEqual(LocalDate.parse(delivery_date))) {
             this.delivery_date = LocalDate.parse(delivery_date);
             if (!CheckFreshness()) {

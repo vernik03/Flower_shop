@@ -10,7 +10,7 @@ public class MiddleFlower extends Flower {
         super(color, height, delivery_date);
     }
 
-    public void setHeight(Integer height){
+    protected void setHeight(Integer height){
         if (height >= 30 && height <= 100) {
             this.height = height;
         } else {

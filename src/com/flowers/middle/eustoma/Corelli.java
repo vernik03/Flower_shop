@@ -7,11 +7,11 @@ public class Corelli extends Eustoma {
     public Corelli(Color color, Integer height, String delivery_date) {
         super(color, height, delivery_date);
     }
-    public void setName(){
+    protected void setName(){
         this.name = Name.EUSTOMA_CORELLI;
     }
 
-    public void setColor(Color color){
+    protected void setColor(Color color){
         if (color == Color.WHITE) {
             this.color = color;
         } else {

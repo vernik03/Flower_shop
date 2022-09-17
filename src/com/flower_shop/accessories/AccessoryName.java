@@ -1,11 +1,11 @@
 package com.flower_shop.accessories;
 
-public enum AccessorieName {
+public enum AccessoryName {
     PAPER,
     RIBBON,
     PAPER_BAG,
     BOX,
     PACKING_TAPE,
     ROPE,
-    BOW,
+    BOW_KNOT,
 }

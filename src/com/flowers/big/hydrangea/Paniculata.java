@@ -8,11 +8,11 @@ public class Paniculata extends Hydrangea {
         super(color, height, delivery_date);
     }
 
-    public void setName(){
+    protected void setName(){
         this.name = Name.HYDRANGEA_PANICULATA;
     }
 
-    public void setColor(Color color){
+    protected void setColor(Color color){
         if (color == Color.WHITE || color == Color.PINK) {
             this.color = color;
         } else {

@@ -10,7 +10,7 @@ public class BigFlower extends Flower
         super(color, height, delivery_date);
     }
 
-    public void setHeight(Integer height){
+    protected void setHeight(Integer height){
         if (height >= 80 && height <= 150) {
             this.height = height;
         } else {

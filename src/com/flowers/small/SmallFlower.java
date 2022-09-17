@@ -10,7 +10,7 @@ public class SmallFlower extends Flower {
         super(color, height, delivery_date);
     }
 
-    public void setHeight(Integer height){
+    protected void setHeight(Integer height){
         if (height >= 10 && height <= 35) {
             this.height = height;
         } else {
