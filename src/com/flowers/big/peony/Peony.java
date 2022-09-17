@@ -1,7 +1,7 @@
 package com.flowers.big.peony;
 
 import com.flowers.big.BigFlower;
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Peony extends BigFlower {

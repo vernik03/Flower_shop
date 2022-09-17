@@ -1,6 +1,6 @@
 package com.flowers.big.lily;
 
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 import com.flowers.big.BigFlower;
 

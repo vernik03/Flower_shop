@@ -1,6 +1,6 @@
 package com.flowers.small.convallaria;
 
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class LilyOfTheValley extends Convallaria {

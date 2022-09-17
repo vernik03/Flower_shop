@@ -1,6 +1,5 @@
 package com.flower_shop;
 
-import com.flowers.Color;
 import  com.flowers.Flower;
 import com.flowers.Name;
 

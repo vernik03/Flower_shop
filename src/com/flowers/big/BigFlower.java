@@ -1,10 +1,8 @@
 package com.flowers.big;
 
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Flower;
 import com.flowers.Name;
-
-import java.time.LocalDate;
 
 public class BigFlower extends Flower
 {

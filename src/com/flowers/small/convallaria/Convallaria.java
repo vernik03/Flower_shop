@@ -1,7 +1,7 @@
 package com.flowers.small.convallaria;
 
 import com.flowers.small.SmallFlower;
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Convallaria extends SmallFlower {

@@ -1,7 +1,7 @@
 package com.flowers.small.gypsophila;
 
 import com.flowers.small.SmallFlower;
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Gypsophila extends SmallFlower {

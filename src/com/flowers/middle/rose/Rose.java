@@ -1,7 +1,7 @@
 package com.flowers.middle.rose;
 
 import com.flowers.middle.MiddleFlower;
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Rose extends MiddleFlower {

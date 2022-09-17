@@ -1,4 +1,4 @@
-package com.flowers;
+package com.flower_shop;
 
 public enum Color{
     RED,

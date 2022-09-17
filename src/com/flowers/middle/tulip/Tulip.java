@@ -1,7 +1,7 @@
 package com.flowers.middle.tulip;
 
 import com.flowers.middle.MiddleFlower;
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Tulip  extends MiddleFlower {

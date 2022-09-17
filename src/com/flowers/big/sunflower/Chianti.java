@@ -1,6 +1,6 @@
 package com.flowers.big.sunflower;
 
-import com.flowers.Color;
+import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Chianti extends Sunflower {
