@@ -4,8 +4,23 @@ import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Elegans extends Gypsophila {
-    public Elegans(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public Elegans(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+    public void setName(){
+        this.name = Name.GYPSOPHILA_ELEGANS;
+    }
+
+    public void setColor(Color color){
+        if (color == Color.WHITE) {
+            this.color = color;
+        } else {
+            throw new IllegalArgumentException("Color is not valid");
+        }
+    }
+
+    public void setPrice(){
+        this.price = 450;
     }
 }
 

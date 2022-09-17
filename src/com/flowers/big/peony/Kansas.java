@@ -8,7 +8,7 @@ public class Kansas extends Peony {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.PEONY_KANSAS;
     }
 
     public void setColor(Color color){

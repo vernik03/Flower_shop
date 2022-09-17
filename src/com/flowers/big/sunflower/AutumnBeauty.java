@@ -8,7 +8,7 @@ public class AutumnBeauty extends Sunflower {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.SUNFLOWER_AUTUMNBEAUTY;
     }
 
     public void setColor(Color color){

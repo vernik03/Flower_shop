@@ -8,7 +8,7 @@ public class Oriental extends Lily {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.LILY_ORIENTAL;
     }
 
     public void setColor(Color color){

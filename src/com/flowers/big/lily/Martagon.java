@@ -8,7 +8,7 @@ public class Martagon extends Lily {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.LILY_MARTAGON;
     }
 
     public void setColor(Color color){

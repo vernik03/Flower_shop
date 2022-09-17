@@ -6,7 +6,10 @@ import com.flowers.middle.MiddleFlower;
 
 
 public class Eustoma extends MiddleFlower {
-    public Eustoma(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public Eustoma(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+    public boolean CheckFreshness(){
+        return getFreshness() < 12;
     }
 }

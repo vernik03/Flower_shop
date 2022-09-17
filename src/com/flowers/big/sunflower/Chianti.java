@@ -8,7 +8,7 @@ public class Chianti extends Sunflower {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.SUNFLOWER_CHIANTI;
     }
 
     public void setColor(Color color){

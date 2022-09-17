@@ -5,8 +5,11 @@ import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Convallaria extends SmallFlower {
-    public Convallaria(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public Convallaria(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+    public boolean CheckFreshness(){
+        return getFreshness() < 12;
     }
 }
 

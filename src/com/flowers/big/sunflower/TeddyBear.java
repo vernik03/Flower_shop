@@ -8,7 +8,7 @@ public class TeddyBear extends Sunflower {
         super(color, height, delivery_date);
     }
     public void setName(){
-        this.name = Name.HYDRANGEA_PETIOLARIS;
+        this.name = Name.SUNFLOWER_TEDDYBEAR;
     }
 
     public void setColor(Color color){

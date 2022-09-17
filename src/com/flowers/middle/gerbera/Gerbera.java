@@ -5,7 +5,10 @@ import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Gerbera extends MiddleFlower {
-    public Gerbera(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public Gerbera(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+    public boolean CheckFreshness(){
+        return getFreshness() < 12;
     }
 }
