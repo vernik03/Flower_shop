@@ -5,7 +5,16 @@ import com.flowers.Flower;
 import com.flowers.Name;
 
 public class SmallFlower extends Flower {
-    public SmallFlower(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+
+    public SmallFlower(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+
+    public void setHeight(Integer height){
+        if (height >= 10 && height <= 35) {
+            this.height = height;
+        } else {
+            throw new IllegalArgumentException("Height is not valid");
+        }
     }
 }

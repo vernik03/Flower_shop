@@ -4,7 +4,23 @@ import com.flower_shop.Color;
 import com.flowers.Name;
 
 public class Paniculata extends Hydrangea {
-    public Paniculata(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public Paniculata(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+
+    public void setName(){
+        this.name = Name.HYDRANGEA_PANICULATA;
+    }
+
+    public void setColor(Color color){
+        if (color == Color.WHITE || color == Color.PINK) {
+            this.color = color;
+        } else {
+            throw new IllegalArgumentException("Color is not valid");
+        }
+    }
+
+    public void setPrice(){
+        this.price = 430;
     }
 }

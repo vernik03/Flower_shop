@@ -6,7 +6,15 @@ import com.flowers.Name;
 
 public class BigFlower extends Flower
 {
-    public BigFlower(Name name, Color color, int price, int height, String delivery_date) {
-        super(name, color, price, height, delivery_date);
+    public BigFlower(Color color, Integer height, String delivery_date) {
+        super(color, height, delivery_date);
+    }
+
+    public void setHeight(Integer height){
+        if (height >= 80 && height <= 150) {
+            this.height = height;
+        } else {
+            throw new IllegalArgumentException("Height is not valid");
+        }
     }
 }
