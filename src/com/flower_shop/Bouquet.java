@@ -1,15 +1,25 @@
 package com.flower_shop;
 
+import com.flower_shop.accessories.Accessory;
+import com.flower_shop.accessories.decoration.DecorationAccessory;
+import com.flower_shop.accessories.fastening.FasteningAccessory;
+import com.flower_shop.accessories.packing.PackingAccessory;
 import  com.flowers.Flower;
 
 import java.util.ArrayList;
 
 public class Bouquet {
     ArrayList<Flower> flowers;
+    PackingAccessory packing;
+    FasteningAccessory fastening;
+    DecorationAccessory decoration;
     private Integer price;
 
     public Bouquet( ) {
         this.flowers = new ArrayList<>();
+        this.packing = null;
+        this.fastening = null;
+        this.decoration = null;
         this.price = 0;
     }
 
@@ -19,6 +29,17 @@ public class Bouquet {
         for (Flower flower : flowers) {
             this.price += flower.getPrice();
         }
+    }
+
+    public Bouquet( ArrayList<Flower> flowers, PackingAccessory packing, FasteningAccessory fastening, DecorationAccessory decoration) {
+        this.flowers = flowers;
+        this.price = 0;
+        for (Flower flower : flowers) {
+            this.price += flower.getPrice();
+        }
+        this.packing = packing;
+        this.fastening = fastening;
+        this.decoration = decoration;
     }
 
     public  ArrayList<Flower> getFlowers() {
@@ -39,6 +60,17 @@ public class Bouquet {
     public void addFlower(Flower flower) {
         flowers.add(flower);
         price += flower.getPrice();
+    }
+
+    public void addAccessory(Accessory accessory) {
+        if (accessory instanceof PackingAccessory) {
+            packing = (PackingAccessory) accessory;
+        } else if (accessory instanceof FasteningAccessory) {
+            fastening = (FasteningAccessory) accessory;
+        } else if (accessory instanceof DecorationAccessory) {
+            decoration = (DecorationAccessory) accessory;
+        }
+        price += accessory.getPrice();
     }
 
 

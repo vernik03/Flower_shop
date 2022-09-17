@@ -9,11 +9,11 @@ public class Paper extends PackingAccessory {
         super(color);
     }
 
-    public void setName(){
+    protected void setName(){
         this.name = AccessoryName.PAPER;
     }
 
     public void setPrice(){
-        this.price = 20;
+        this.price = 30;
     }
 }
