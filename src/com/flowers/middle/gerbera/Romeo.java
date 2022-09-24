@@ -12,7 +12,7 @@ public class Romeo extends Gerbera {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.RED || color == Color.ORANGE || color == Color.PINK) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Romeo extends Gerbera {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 50;
     }
 }

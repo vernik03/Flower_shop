@@ -20,6 +20,6 @@ public class SnowQueen extends Myosotis {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 25;
     }
 }

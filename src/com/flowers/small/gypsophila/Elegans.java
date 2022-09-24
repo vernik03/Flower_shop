@@ -20,7 +20,7 @@ public class Elegans extends Gypsophila {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 60;
     }
 }
 

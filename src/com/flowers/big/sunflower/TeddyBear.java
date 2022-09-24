@@ -12,7 +12,7 @@ public class TeddyBear extends Sunflower {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+    if (color == Color.YELLOW) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class TeddyBear extends Sunflower {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 55;
     }
 }

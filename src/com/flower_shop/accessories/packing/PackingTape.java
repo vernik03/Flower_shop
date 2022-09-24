@@ -15,6 +15,6 @@ public class PackingTape extends PackingAccessory {
     }
 
     public void setPrice(){
-        this.price = 20;
+        this.price = 10;
     }
 }

@@ -11,7 +11,7 @@ public class MiddleFlower extends Flower {
     }
 
     protected void setHeight(Integer height){
-        if (height >= 30 && height <= 100) {
+        if (height >= 25 && height <= 100) {
             this.height = height;
         } else {
             throw new IllegalArgumentException("Height is not valid");

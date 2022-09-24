@@ -12,7 +12,7 @@ public class Indigo extends Myosotis {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.BLUE) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Indigo extends Myosotis {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 30;
     }
 }

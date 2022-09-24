@@ -12,7 +12,7 @@ public class SarahBernhardt extends Peony {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.PINK) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class SarahBernhardt extends Peony {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 140;
     }
 }

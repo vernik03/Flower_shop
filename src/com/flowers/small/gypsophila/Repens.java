@@ -12,7 +12,7 @@ public class Repens extends Gypsophila {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.WHITE || color == Color.PINK || color == Color.VIOLET) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,7 +20,7 @@ public class Repens extends Gypsophila {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 50;
     }
 }
 

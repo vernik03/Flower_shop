@@ -1,36 +1,40 @@
 package com.flower_shop;
 
+import com.flower_shop.accessories.fastening.Ribbon;
+import com.flower_shop.accessories.packing.PackingAccessory;
+import com.flower_shop.accessories.packing.PackingTape;
 import  com.flowers.Flower;
 import com.flowers.Name;
 import com.flowers.big.hydrangea.Macrophylla;
+
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
         Florist florist = new Florist();
-        Flower[] flowers = new Flower[3];
-//        flowers[0] = new Flower(Name.ROSE_AKITO, Color.RED, 100, 10, "2022-09-10");
-//        flowers[1] = new Flower(Name.ROSE_ALOHA, Color.YELLOW, 120, 13, "2022-09-12");
-//        flowers[2] = new Flower(Name.ROSE_AMSTERDAM, Color.ORANGE, 130, 8, "2022-09-15");
-//
-//        flowers[3] = new Flower(Name.TULIP_BREST, Color.RED, 50, 8, "2022-09-10");
-//        flowers[4] = new Flower(Name.TULIP_CUMMINS, Color.YELLOW, 40, 5, "2022-09-12");
-//        flowers[5] = new Flower(Name.TULIP_GABRIELLA, Color.PINK, 30, 4, "2022-09-15");
-//
-//        flowers[6] = new Flower(Name.EUSTOMA_CORELLI, Color.RED, 50, 8, "2022-09-10");
-//        flowers[7] = new Flower(Name.EUSTOMA_ECHO, Color.YELLOW, 40, 5, "2022-09-12");
-//        flowers[8] = new Flower(Name.EUSTOMA_MARIACHI, Color.PINK, 30, 4, "2022-09-15");
-        flowers[0] = new Macrophylla(Color.BLUE, 100, "2022-09-16");
-        flowers[1] = new Macrophylla(Color.PURPLE, 120, "2022-09-12");
-        flowers[2] = new Macrophylla(Color.PINK, 130, "2022-09-15");
-
-
-        for (Flower flower : flowers) {
-            warehouse.addFlower(flower);
+        for (int i = 0; i < 5; i++) {
+            warehouse.buyingFlowers("2022-09-23");
         }
         //warehouse.printFlowerCount();
-        Bouquet bouquet = florist.makeBouquet(warehouse, flowers);
+        ArrayList<Flower> for_bouquet = new ArrayList<Flower>();
+        for_bouquet.add(warehouse.getFlower(Name.SUNFLOWER_TEDDYBEAR, Color.YELLOW));
+        for_bouquet.add(warehouse.getFlower(Name.SUNFLOWER_TEDDYBEAR, Color.YELLOW));
+        for_bouquet.add(warehouse.getFlower(Name.CHRYSANTHEMUM_DUNE, Color.ORANGE));
+        for_bouquet.add(warehouse.getFlower(Name.CHRYSANTHEMUM_DUNE, Color.ORANGE));
+        for_bouquet.add(warehouse.getFlower(Name.CHRYSANTHEMUM_ANASTASIA, Color.YELLOW));
+        for_bouquet.add(warehouse.getFlower(Name.CHRYSANTHEMUM_ANASTASIA, Color.YELLOW));
+        for_bouquet.add(warehouse.getFlower(Name.GYPSOPHILA_ELEGANS, Color.WHITE));
+        for_bouquet.add(warehouse.getFlower(Name.GYPSOPHILA_ELEGANS, Color.WHITE));
+        for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.YELLOW));
+        for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.ORANGE));
+        for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.RED));
+
+        //warehouse.printFlowerCount();
+        Bouquet bouquet = florist.makeBouquet(warehouse, for_bouquet);
+        bouquet.addAccessory(new PackingTape(Color.WHITE));
+        bouquet.addAccessory(new Ribbon(Color.YELLOW));
         bouquet.printBouquet();
         //warehouse.printFlowerCount();
 

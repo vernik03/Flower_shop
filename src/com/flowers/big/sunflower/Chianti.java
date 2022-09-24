@@ -12,7 +12,7 @@ public class Chianti extends Sunflower {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.BURGUNDY) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Chianti extends Sunflower {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 75;
     }
 }

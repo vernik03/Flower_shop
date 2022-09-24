@@ -14,6 +14,6 @@ public class Paper extends PackingAccessory {
     }
 
     public void setPrice(){
-        this.price = 30;
+        this.price = 15;
     }
 }

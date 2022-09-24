@@ -12,7 +12,7 @@ public class Corelli extends Eustoma {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.PINK || color == Color.VIOLET) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Corelli extends Eustoma {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 50;
     }
 }

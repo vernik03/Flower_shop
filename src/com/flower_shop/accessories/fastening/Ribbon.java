@@ -14,6 +14,6 @@ public class Ribbon extends FasteningAccessory {
     }
 
     public void setPrice(){
-        this.price = 30;
+        this.price = 15;
     }
 }

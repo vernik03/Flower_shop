@@ -14,6 +14,6 @@ public class BowKnot extends DecorationAccessory {
     }
 
     public void setPrice(){
-        this.price = 70;
+        this.price = 40;
     }
 }

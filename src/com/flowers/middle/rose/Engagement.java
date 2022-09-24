@@ -12,7 +12,7 @@ public class Engagement extends Rose {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.CREAM) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Engagement extends Rose {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 110;
     }
 }

@@ -20,6 +20,6 @@ public class LilyOfTheValley extends Convallaria {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 50;
     }
 }

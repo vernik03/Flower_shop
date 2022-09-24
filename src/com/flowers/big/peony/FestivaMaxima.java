@@ -20,6 +20,6 @@ public class FestivaMaxima extends Peony {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 120;
     }
 }

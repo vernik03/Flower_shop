@@ -12,7 +12,7 @@ public class Akito extends Rose {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.WHITE || color == Color.PINK) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Akito extends Rose {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 90;
     }
 }

@@ -19,6 +19,8 @@ public class Accessory {
 
     protected void setColor(Color color){ this.color = color;}
 
+    public Color getColor() {return color;}
+
     protected void setName (){
         this.name = null;
     }
@@ -30,4 +32,6 @@ public class Accessory {
     public int getPrice() {
         return price;
     }
+
+
 }

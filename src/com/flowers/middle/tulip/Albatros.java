@@ -20,6 +20,6 @@ public class Albatros extends Tulip {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 30;
     }
 }

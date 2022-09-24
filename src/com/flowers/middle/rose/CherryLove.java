@@ -12,7 +12,7 @@ public class CherryLove extends Rose {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.RED) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");

@@ -13,5 +13,9 @@ public enum Color{
     BROWN,
     GRAY,
     VIOLET,
-    MULTICOLORED
+    MULTICOLORED,
+    CRIMSON,
+    BURGUNDY,
+    CORAL,
+    CREAM,
 }

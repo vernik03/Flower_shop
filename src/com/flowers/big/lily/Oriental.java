@@ -12,7 +12,7 @@ public class Oriental extends Lily {
     }
 
     protected void setColor(Color color){
-        if (color == Color.WHITE) {
+        if (color == Color.PINK || color == Color.ORANGE || color == Color.WHITE) {
             this.color = color;
         } else {
             throw new IllegalArgumentException("Color is not valid");
@@ -20,6 +20,6 @@ public class Oriental extends Lily {
     }
 
     public void setPrice(){
-        this.price = 450;
+        this.price = 90;
     }
 }
