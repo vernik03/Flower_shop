@@ -91,6 +91,7 @@ public class Florist {
         for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.ORANGE));
         for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.RED));
         for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.RED));
+        for_bouquet.add(warehouse.getFlower(Name.GERBERA_HELIOS, Color.RED));
         Bouquet result = makeBouquet(warehouse, for_bouquet);
         result.addAccessory(new Paper(Color.YELLOW));
         result.addAccessory(new Rope(Color.RED));
@@ -103,10 +104,10 @@ public class Florist {
         for_bouquet.add(warehouse.getFlower(Name.ROSE_AKITO, Color.WHITE));
         for_bouquet.add(warehouse.getFlower(Name.ROSE_AKITO, Color.WHITE));
         for_bouquet.add(warehouse.getFlower(Name.ROSE_AKITO, Color.WHITE));
-        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_CORELLI, Color.GREEN));
-        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_CORELLI, Color.GREEN));
-        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_CORELLI, Color.WHITE));
-        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_CORELLI, Color.WHITE));
+        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_ROSITA, Color.GREEN));
+        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_ROSITA, Color.GREEN));
+        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_ROSITA, Color.WHITE));
+        for_bouquet.add(warehouse.getFlower(Name.EUSTOMA_ROSITA, Color.WHITE));
         for_bouquet.add(warehouse.getFlower(Name.CONVALLARIA_LILYOFTHEVALLEY, Color.WHITE));
         for_bouquet.add(warehouse.getFlower(Name.CONVALLARIA_LILYOFTHEVALLEY, Color.WHITE));
         for_bouquet.add(warehouse.getFlower(Name.CONVALLARIA_LILYOFTHEVALLEY, Color.WHITE));

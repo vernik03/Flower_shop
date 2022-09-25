@@ -61,18 +61,18 @@ public class Bouquet {
     }
 
     public void printBouquet() {
-        System.out.println("Bouquet price: " + price + "₴");
+        System.out.println("\nBouquet price: " + price + "₴\n");
         for (Flower flower : flowers) {
             System.out.println(flower.getName() + " " + flower.getColor() + " " + flower.getPrice() + "₴");
         }
         if (packing != null) {
-            System.out.println("Packed in " + packing.getName() + " " + packing.getColor() + " " + packing.getPrice() + "₴");
+            System.out.println("Packed in: " + packing.getName() + " " + packing.getColor() + " " + packing.getPrice() + "₴");
         }
         if (fastening != null) {
-            System.out.println("With " + fastening.getName() + " " + fastening.getColor() + " " + fastening.getPrice() + "₴");
+            System.out.println("With: " + fastening.getName() + " " + fastening.getColor() + " " + fastening.getPrice() + "₴");
         }
         if (decoration != null) {
-            System.out.println("With " + decoration.getName() + " " + decoration.getColor() + " " + decoration.getPrice() + "₴");
+            System.out.println("With: " + decoration.getName() + " " + decoration.getColor() + " " + decoration.getPrice() + "₴");
         }
     }
 

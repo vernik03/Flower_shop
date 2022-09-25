@@ -13,11 +13,11 @@ public class Main {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
         Florist florist = new Florist();
-        warehouse.buyingFlowers(5, "2022-09-23");
-        warehouse.buyingFlowers(5, "2022-09-24");
-        warehouse.buyingFlowers(5, "2022-09-22");
-        warehouse.buyingFlowers(5, "2022-09-20");
-        warehouse.buyingFlowers(5, "2022-09-25");
+        warehouse.buyingFlowers(4, "2022-09-23");
+        warehouse.buyingFlowers(6, "2022-09-24");
+        warehouse.buyingFlowers(4, "2022-09-22");
+        warehouse.buyingFlowers(3, "2022-09-20");
+        warehouse.buyingFlowers(6, "2022-09-25");
         interfaceRun(warehouse,florist);
     }
 
@@ -58,8 +58,6 @@ public class Main {
                     System.out.println("Incorrect number");
                     break;
             }
-            bouquet.printBouquet();
-
             System.out.println("Sort by freshness: ");
             bouquet.sortByFreshness();
             bouquet.printBouquet();
@@ -70,13 +68,18 @@ public class Main {
             System.out.println("Enter max length: ");
             int length_max = scanner.nextInt();
             ArrayList<Flower> flowers = bouquet.getFlowersByLength(length_min, length_max);
-            for (Flower flower : flowers) {
-                System.out.println(flower.getName() + " " + flower.getHeight());
+            if (flowers.size() == 0){
+                System.out.println("Flowers not found");
+            }
+            else {
+                for (Flower flower : flowers) {
+                    System.out.println(flower.getName() + " " + flower.getHeight());
+                }
             }
 
             System.out.println("One more bouquet? (y/n)");
             String answer = scanner.next();
-            if (answer.equals("n")) {
+            if (answer.equals("n")|| answer.equals("N")) {
                 return;
             }
         }
