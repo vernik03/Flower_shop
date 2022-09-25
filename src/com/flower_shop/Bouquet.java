@@ -31,6 +31,16 @@ public class Bouquet {
         }
     }
 
+    public Bouquet( ArrayList<Flower> flowers, PackingAccessory packing, FasteningAccessory fastening) {
+        this.flowers = flowers;
+        this.price = 0;
+        for (Flower flower : flowers) {
+            this.price += flower.getPrice();
+        }
+        this.packing = packing;
+        this.fastening = fastening;
+    }
+
     public Bouquet( ArrayList<Flower> flowers, PackingAccessory packing, FasteningAccessory fastening, DecorationAccessory decoration) {
         this.flowers = flowers;
         this.price = 0;
@@ -87,7 +97,7 @@ public class Bouquet {
         flowers.sort((o1, o2) -> o1.getFreshness().compareTo(o2.getFreshness()));
     }
 
-    public Flower getFlowerByLength(int length_min, int length_max){
+    public ArrayList<Flower> getFlowersByLength(int length_min, int length_max){
         ArrayList<Flower> res_flowers = new ArrayList<>();
         for (Flower flower : flowers) {
             if (flower.getHeight() >= length_min && flower.getHeight() <= length_max) {
@@ -95,7 +105,7 @@ public class Bouquet {
             }
         }
         if (res_flowers.size() > 0) {
-            return res_flowers.get(0);
+            return res_flowers;
         }
         return null;
     }

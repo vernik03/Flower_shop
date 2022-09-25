@@ -113,6 +113,12 @@ public class Warehouse {
                     " " + f.getValue());
     }
 
+    public void buyingFlowers(Integer count, String date) {
+        for (int i = 0; i < count; i++) {
+            buyingFlowers(date);
+        }
+    }
+
     public void buyingFlowers(String date) {
         addFlower(new Macrophylla(Color.PURPLE, 120, date));
         addFlower(new Macrophylla(Color.BLUE, 120, date));
