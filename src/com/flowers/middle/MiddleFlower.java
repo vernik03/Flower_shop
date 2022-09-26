@@ -4,7 +4,7 @@ import com.flower_shop.Color;
 import com.flowers.Flower;
 import com.flowers.Name;
 
-public class MiddleFlower extends Flower {
+public abstract class MiddleFlower extends Flower {
 
     public MiddleFlower(Color color, Integer height, String delivery_date) {
         super(color, height, delivery_date);

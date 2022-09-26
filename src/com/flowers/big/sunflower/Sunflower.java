@@ -4,7 +4,7 @@ import com.flower_shop.Color;
 import com.flowers.Name;
 import com.flowers.big.BigFlower;
 
-public class Sunflower extends BigFlower {
+public abstract class Sunflower extends BigFlower {
     public Sunflower(Color color, Integer height, String delivery_date) {
         super(color, height, delivery_date);
     }

@@ -5,7 +5,7 @@ import com.flowers.Name;
 import com.flowers.middle.MiddleFlower;
 
 
-public class Eustoma extends MiddleFlower {
+public abstract class Eustoma extends MiddleFlower {
     public Eustoma(Color color, Integer height, String delivery_date) {
         super(color, height, delivery_date);
     }

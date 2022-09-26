@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 
-public class Flower {
+public abstract class Flower {
     protected Name name;
     protected Color color;
     protected Integer price;

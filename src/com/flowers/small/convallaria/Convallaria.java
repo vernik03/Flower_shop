@@ -4,7 +4,7 @@ import com.flowers.small.SmallFlower;
 import com.flower_shop.Color;
 import com.flowers.Name;
 
-public class Convallaria extends SmallFlower {
+public abstract class Convallaria extends SmallFlower {
     public Convallaria(Color color, Integer height, String delivery_date) {
         super(color, height, delivery_date);
     }
