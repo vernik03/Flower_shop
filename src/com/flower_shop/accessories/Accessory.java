@@ -16,6 +16,9 @@ public class Accessory {
     public void setPrice(){
         this.price = 0;
     }
+    public void setPrice(Integer price){
+        this.price = price;
+    }
 
     protected void setColor(Color color){ this.color = color;}
 

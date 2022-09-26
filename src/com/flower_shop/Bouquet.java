@@ -9,10 +9,10 @@ import  com.flowers.Flower;
 import java.util.ArrayList;
 
 public class Bouquet {
-    ArrayList<Flower> flowers;
-    PackingAccessory packing;
-    FasteningAccessory fastening;
-    DecorationAccessory decoration;
+    private ArrayList<Flower> flowers;
+    private PackingAccessory packing;
+    private FasteningAccessory fastening;
+    private DecorationAccessory decoration;
     private Integer price;
 
     public Bouquet( ) {
